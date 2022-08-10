@@ -2,7 +2,7 @@
 
 This is an survey webapp where different images will be graded by different responders.
 
-## Prerequisite
+## Guide
 
 Install Dependencies:
 
