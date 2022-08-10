@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Grade Images</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script type="text/javascript">
+        var userId = {{ data.userId|tojson }}
+    </script>
+</head>
+<body>
+    <div class="row" id="survey-main">
+        <div class="col-md-10 offset-md-1" id="main-col">
+        </div>
+    </div> 
+</body>
+<script type="module" src="/static/survey.js"></script>
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyleft &copy; Rocky Li</p>
+    </div>
+</footer>
+</html>

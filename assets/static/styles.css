@@ -1,0 +1,13 @@
+button {
+    margin: 10px;
+}
+
+input {
+    display: inline-block !important;
+    width: 60% !important;
+}
+
+#login-area {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
