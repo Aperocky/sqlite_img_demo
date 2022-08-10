@@ -36,7 +36,7 @@ def insert_mock_user_images(dao, user_ids):
     user_images = []
     for user_id in user_ids:
         chosen_images = random.sample(imgs, 5)
-        for i in range(5):
-            user_images.append(UserImage(pair_id=str(uuid.uuid4()), user_id=user_id, ref=chosen_images[i]))
+        for image in chosen_images:
+            user_images.append(UserImage(pair_id=str(uuid.uuid4()), user_id=user_id, ref=image))
     dao.insert_items(user_images)
 
