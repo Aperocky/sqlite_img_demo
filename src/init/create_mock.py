@@ -26,7 +26,7 @@ def insert_mock_images(dao):
     imgs = os.listdir(MOCK_IMG_DIR)
     images = []
     for img in imgs:
-        images.append(Image(ref=img, src=img))
+        images.append(Image(ref=img))
     dao.insert_items(images)
 
 

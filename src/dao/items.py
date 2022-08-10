@@ -6,20 +6,15 @@ class Image(TableItem):
     TABLE_NAME = "images"
     INDEX_KEYS = ["ref"]
     ALL_COLUMNS = {
-        "ref": str,
-        "src": str
+        "ref": str
     }
 
     def __init__(self, row_tuple=None, **kwargs):
         super().__init__(row_tuple, **kwargs)
         self.load_tuple()
 
-    def sync_tuple(self):
-        self.row_tuple = {"ref": self.ref, "src": self.src}
-
     def load_tuple(self):
         self.ref = self.row_tuple["ref"]
-        self.src = self.row_tuple["src"]
 
 
 class User(TableItem):

@@ -19,9 +19,7 @@ def create_tables():
 
 def create_images(dao):
     # Create threads table
-    columns = ColumnDict()\
-        .add_column("ref", "text", "primary key")\
-        .add_column("src", "text", "not null")
+    columns = ColumnDict().add_column("ref", "text", "primary key")
     dao.create_table("images", columns)
 
 def create_users(dao):
